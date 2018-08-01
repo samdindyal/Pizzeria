@@ -8,6 +8,6 @@
 
 import UIKit
 
-class PizzeriaViewController: UIViewController {
+class PizzeriaViewController: UITableViewController {
     
 }

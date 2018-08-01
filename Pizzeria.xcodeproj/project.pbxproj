@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		581FD10D21123D870031D8B5 /* Pizzeria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581FD10C21123D870031D8B5 /* Pizzeria.swift */; };
 		581FD10F21123DA70031D8B5 /* PizzeriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581FD10E21123DA70031D8B5 /* PizzeriaViewController.swift */; };
+		581FD111211243BC0031D8B5 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581FD110211243BC0031D8B5 /* ReceiptViewController.swift */; };
 		58E384E7211137EB00BE49CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E384E6211137EB00BE49CD /* AppDelegate.swift */; };
 		58E384EC211137EB00BE49CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E384EA211137EB00BE49CD /* Main.storyboard */; };
 		58E384EE211137EC00BE49CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58E384ED211137EC00BE49CD /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		581FD10C21123D870031D8B5 /* Pizzeria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizzeria.swift; sourceTree = "<group>"; };
 		581FD10E21123DA70031D8B5 /* PizzeriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzeriaViewController.swift; sourceTree = "<group>"; };
+		581FD110211243BC0031D8B5 /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
 		58E384E3211137EB00BE49CD /* Pizzeria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pizzeria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E384E6211137EB00BE49CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58E384EB211137EB00BE49CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				581FD10E21123DA70031D8B5 /* PizzeriaViewController.swift */,
 				58E384E6211137EB00BE49CD /* AppDelegate.swift */,
 				58E384EA211137EB00BE49CD /* Main.storyboard */,
+				581FD110211243BC0031D8B5 /* ReceiptViewController.swift */,
 				58E384ED211137EC00BE49CD /* Assets.xcassets */,
 				58E384EF211137EC00BE49CD /* LaunchScreen.storyboard */,
 				58E384F2211137EC00BE49CD /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				581FD10F21123DA70031D8B5 /* PizzeriaViewController.swift in Sources */,
+				581FD111211243BC0031D8B5 /* ReceiptViewController.swift in Sources */,
 				581FD10D21123D870031D8B5 /* Pizzeria.swift in Sources */,
 				58E384E7211137EB00BE49CD /* AppDelegate.swift in Sources */,
 			);
