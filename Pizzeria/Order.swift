@@ -18,7 +18,6 @@ class Order {
         }
     }
     var cost:Float!
-    
     init(pizzas:[Pizza] = []) {
         self.pizzas = pizzas
     }

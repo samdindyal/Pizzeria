@@ -9,5 +9,5 @@
 import UIKit
 
 class PizzeriaViewController: UITableViewController {
-    
+    var pizzeria:Pizzeria!
 }

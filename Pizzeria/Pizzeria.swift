@@ -9,5 +9,9 @@
 import UIKit
 
 class Pizzeria {
+    var orders:[Order]
     
+    init(orders:[Order] = []) {
+        self.orders = orders
+    }
 }
