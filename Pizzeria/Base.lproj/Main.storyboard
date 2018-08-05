@@ -52,7 +52,7 @@
                     <navigationItem key="navigationItem" title="Pizzeria" id="oN6-tY-Ca7">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="LWC-eb-Rtd">
                             <connections>
-                                <segue destination="OFg-RY-RlE" kind="show" identifier="addOrder" id="FB0-o4-tj2"/>
+                                <segue destination="OFg-RY-RlE" kind="show" identifier="addOrder" id="QlY-zz-QVj"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -64,6 +64,7 @@
         <!--Order-->
         <scene sceneID="cav-AW-CHO">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p8y-hB-0S7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="OFg-RY-RlE" customClass="OrderViewController" customModule="Pizzeria" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9SU-VW-Gln">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -103,21 +104,18 @@
                     <navigationItem key="navigationItem" title="Order" id="8na-gD-Wec">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="cFe-oV-7YP">
                             <connections>
-                                <segue destination="4j0-MO-XMJ" kind="show" id="1wx-E6-2pV"/>
+                                <segue destination="4j0-MO-XMJ" kind="show" identifier="addPizza" id="1wx-E6-2pV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="addPizza" destination="cFe-oV-7YP" id="0NN-U4-GGm"/>
-                    </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="p8y-hB-0S7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2079" y="354"/>
         </scene>
         <!--Add Pizza-->
         <scene sceneID="QK1-nj-IfM">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dph-j1-tFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="4j0-MO-XMJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1vf-CG-CCH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -200,7 +198,6 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="WCn-6O-sAQ"/>
                     </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dph-j1-tFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2938" y="354"/>
         </scene>
