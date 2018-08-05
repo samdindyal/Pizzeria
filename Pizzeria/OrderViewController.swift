@@ -56,6 +56,7 @@ class OrderViewController: UITableViewController {
         }
         
         tableView.reloadData()
+        
     }
     
 }

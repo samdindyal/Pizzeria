@@ -11,11 +11,19 @@ import UIKit
 class PizzeriaViewController: UITableViewController {
     var pizzeria:Pizzeria!
     
+    var numberFormatter:NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.minimumFractionDigits = 2
+        formatter.maximumFractionDigits = 2
+        return formatter
+    }()
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "OrderCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "OrderCell", for: indexPath) as! OrderCell
         let order = self.pizzeria.orders[indexPath.row]
-        cell.textLabel?.text = "Order \(indexPath.row + 1)"
-        cell.detailTextLabel?.text = "\(order.pizzas.count) item\(order.pizzas.count == 1 ? "" : "s")"
+        cell.orderNumberLabel.text = "Order \(indexPath.row + 1)"
+        cell.orderDescriptionLabel.text = "\(order.pizzas.count) item\(order.pizzas.count == 1 ? "" : "s")"
+        cell.orderCostLabel.text = "$\(numberFormatter.string(from: NSNumber(value: order.cost)) ?? "???")"
         return cell
     }
     
