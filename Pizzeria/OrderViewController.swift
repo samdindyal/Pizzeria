@@ -39,7 +39,6 @@ class OrderViewController: UITableViewController {
         case "addPizza":
             let pizzaViewController = segue.destination as! PizzaViewController
             pizzaViewController.pizza = self.order.startPizza()
-            print("SIZE OF PIZZA AFTER ORDER START \(self.order.pizzaInProgress?.size ?? 0)")
         default:
             preconditionFailure("Unrecognized segue identifier: \(segue.identifier!)")
         }
@@ -52,10 +51,6 @@ class OrderViewController: UITableViewController {
          tableView.reloadData()
         }
         
-        print("SIZE OF PIZZA \(self.order.pizzaInProgress?.size ?? 0)")
-        print("NUMBER OF PIZZAS: \(self.order?.pizzas.count ?? 0)")
-        
-//        tableView.reloadData()
     }
     
 }
