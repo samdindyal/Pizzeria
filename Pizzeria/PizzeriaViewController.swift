@@ -13,8 +13,9 @@ class PizzeriaViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "OrderCell", for: indexPath)
-        cell.textLabel?.text = "Order \(indexPath.row)"
-        cell.detailTextLabel?.text = "\(pizzeria.orders.count) item\(pizzeria.orders.count == 1 ? "" : "s")"
+        let order = self.pizzeria.orders[indexPath.row]
+        cell.textLabel?.text = "Order \(indexPath.row + 1)"
+        cell.detailTextLabel?.text = "\(order.pizzas.count) item\(order.pizzas.count == 1 ? "" : "s")"
         return cell
     }
     
@@ -27,6 +28,12 @@ class PizzeriaViewController: UITableViewController {
         case "addOrder":
             let orderViewController = segue.destination as! OrderViewController
             orderViewController.order = self.pizzeria.startOrder()
+        case "showOrder":
+            let orderViewController = segue.destination as! OrderViewController
+            if let row = tableView.indexPathForSelectedRow?.row {
+                let order = self.pizzeria.orders[row]
+                orderViewController.order = order
+            }
         default:
             preconditionFailure("Unrecognized segue identifier: \(segue.identifier!)")
         }
@@ -37,7 +44,8 @@ class PizzeriaViewController: UITableViewController {
         
         if self.pizzeria.orderInProgress != nil && self.pizzeria.orderInProgress.hasPizzas() {
             self.pizzeria.finishOrder()
-            tableView.reloadData()
         }
+        
+        tableView.reloadData()
     }
 }

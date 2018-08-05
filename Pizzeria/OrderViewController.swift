@@ -39,6 +39,11 @@ class OrderViewController: UITableViewController {
         case "addPizza":
             let pizzaViewController = segue.destination as! PizzaViewController
             pizzaViewController.pizza = self.order.startPizza()
+        case "showPizza":
+            if let row = tableView.indexPathForSelectedRow?.row {
+                let pizzaViewController = segue.destination as! PizzaViewController
+                pizzaViewController.pizza = self.order.pizzas[row]
+            }
         default:
             preconditionFailure("Unrecognized segue identifier: \(segue.identifier!)")
         }
@@ -48,9 +53,9 @@ class OrderViewController: UITableViewController {
         super.viewWillAppear(animated)
         if self.order.pizzaInProgress != nil {
          self.order.finishOrder()
-         tableView.reloadData()
         }
         
+        tableView.reloadData()
     }
     
 }

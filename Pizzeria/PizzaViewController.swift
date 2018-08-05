@@ -28,4 +28,12 @@ class PizzaViewController: UIViewController {
         costLabel.text = "$\(self.numberFormatter.string(from: NSNumber(value: self.pizza.cost!)) ?? "???")"
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        sizeSlider.value = Float(self.pizza.size)
+        sizeLabel.text = "\(self.pizza.size)\""
+        costLabel.text = "$\(self.numberFormatter.string(from: NSNumber(value: self.pizza.cost!)) ?? "???")"
+    }
+    
 }

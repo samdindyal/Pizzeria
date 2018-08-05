@@ -42,6 +42,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="OFg-RY-RlE" kind="show" identifier="showOrder" id="NFk-Lm-Ks4"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -94,6 +97,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="4j0-MO-XMJ" kind="show" identifier="showPizza" id="6ts-4L-L5l"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -209,6 +215,7 @@
                     <connections>
                         <outlet property="costLabel" destination="Wkf-Bz-o0f" id="ZKD-U5-0EH"/>
                         <outlet property="sizeLabel" destination="UvA-fB-RRZ" id="mKg-Fx-klG"/>
+                        <outlet property="sizeSlider" destination="34e-wR-GOi" id="4pV-s9-smQ"/>
                     </connections>
                 </viewController>
             </objects>
@@ -231,4 +238,8 @@
             <point key="canvasLocation" x="340" y="354"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6ts-4L-L5l"/>
+        <segue reference="NFk-Lm-Ks4"/>
+    </inferredMetricsTieBreakers>
 </document>
