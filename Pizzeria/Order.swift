@@ -17,8 +17,29 @@ class Order {
             })
         }
     }
+    
+    var pizzaInProgress:Pizza!
+    
     var cost:Float!
     init(pizzas:[Pizza] = []) {
         self.pizzas = pizzas
+    }
+    
+    func addPizza(pizza: Pizza) {
+        self.pizzas.append(pizza)
+    }
+    
+    func startPizza(pizza: Pizza) -> Pizza {
+        self.pizzaInProgress = Pizza()
+        return self.pizzaInProgress
+    }
+    
+    func finishOrder() {
+        self.addPizza(pizza: self.pizzaInProgress)
+        self.pizzaInProgress = nil
+    }
+    
+    func cancelOrder() {
+        self.pizzaInProgress = nil
     }
 }
