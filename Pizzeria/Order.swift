@@ -29,7 +29,7 @@ class Order {
         self.pizzas.append(pizza)
     }
     
-    func startPizza(pizza: Pizza) -> Pizza {
+    func startPizza() -> Pizza {
         self.pizzaInProgress = Pizza()
         return self.pizzaInProgress
     }

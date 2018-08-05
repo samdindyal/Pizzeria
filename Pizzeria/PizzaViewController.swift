@@ -12,7 +12,7 @@ class PizzaViewController: UIViewController {
     var pizza:Pizza!
     var numberFormatter:NumberFormatter = {
         let formatter = NumberFormatter()
-        formatter.minimumFractionDigits = 0
+        formatter.minimumFractionDigits = 2
         formatter.maximumFractionDigits = 2
         return formatter
     }()
