@@ -27,4 +27,5 @@ class PizzaViewController: UIViewController {
         sizeLabel.text = "\(self.pizza.size)\""
         costLabel.text = "$\(self.numberFormatter.string(from: NSNumber(value: self.pizza.cost!)) ?? "???")"
     }
+    
 }

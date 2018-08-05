@@ -31,4 +31,13 @@ class PizzeriaViewController: UITableViewController {
             preconditionFailure("Unrecognized segue identifier: \(segue.identifier!)")
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if self.pizzeria.orderInProgress != nil && self.pizzeria.orderInProgress.hasPizzas() {
+            self.pizzeria.finishOrder()
+            tableView.reloadData()
+        }
+    }
 }

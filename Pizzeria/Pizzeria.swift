@@ -33,4 +33,8 @@ class Pizzeria {
     func cancelOrder() {
         self.orderInProgress = nil
     }
+    
+    func hasOrders() -> Bool {
+        return !self.orders.isEmpty
+    }
 }
