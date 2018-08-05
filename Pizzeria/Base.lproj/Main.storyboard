@@ -102,6 +102,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Order" id="8na-gD-Wec">
+                        <barButtonItem key="backBarButtonItem" title="Done" id="9Hp-4T-Rpd"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="cFe-oV-7YP">
                             <connections>
                                 <segue destination="4j0-MO-XMJ" kind="show" identifier="addPizza" id="1wx-E6-2pV"/>
@@ -116,7 +117,7 @@
         <scene sceneID="QK1-nj-IfM">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dph-j1-tFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="4j0-MO-XMJ" sceneMemberID="viewController">
+                <viewController id="4j0-MO-XMJ" customClass="PizzaViewController" customModule="Pizzeria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1vf-CG-CCH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,8 +135,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="34e-wR-GOi">
-                                        <rect key="frame" x="6" y="181" width="363" height="31"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minValue="6" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="34e-wR-GOi">
+                                        <rect key="frame" x="48" y="181" width="279" height="31"/>
+                                        <connections>
+                                            <action selector="changePizzaSizeWithSender:" destination="dph-j1-tFS" eventType="valueChanged" id="u0W-pa-pVS"/>
+                                        </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvA-fB-RRZ">
                                         <rect key="frame" x="159" y="219" width="58.333333333333343" height="58"/>
@@ -149,8 +153,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$4.75" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wkf-Bz-o0f">
-                                        <rect key="frame" x="116.66666666666669" y="405" width="142" height="58"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$2.35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wkf-Bz-o0f">
+                                        <rect key="frame" x="115.66666666666669" y="405" width="144" height="58"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="48"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -159,7 +163,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Wkf-Bz-o0f" firstAttribute="centerX" secondItem="WsN-vh-dv1" secondAttribute="centerX" id="8Te-jt-oVH"/>
-                                    <constraint firstItem="34e-wR-GOi" firstAttribute="leading" secondItem="wiR-of-4SM" secondAttribute="leading" constant="8" id="9hM-c3-vbA"/>
+                                    <constraint firstItem="34e-wR-GOi" firstAttribute="leading" secondItem="wiR-of-4SM" secondAttribute="leading" constant="50" id="9hM-c3-vbA"/>
                                     <constraint firstItem="WsN-vh-dv1" firstAttribute="centerX" secondItem="wiR-of-4SM" secondAttribute="centerX" id="ARL-gB-uv6"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WsN-vh-dv1" secondAttribute="trailing" constant="8" id="CnE-5r-pYF"/>
                                     <constraint firstItem="UvA-fB-RRZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wiR-of-4SM" secondAttribute="leading" constant="8" id="E2x-Pg-fdT"/>
@@ -179,7 +183,7 @@
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uuN-0H-WPC" secondAttribute="trailing" constant="8" id="qyu-xe-3dO"/>
                                     <constraint firstItem="WsN-vh-dv1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wiR-of-4SM" secondAttribute="leading" constant="8" id="rho-Xs-jmh"/>
                                     <constraint firstItem="UvA-fB-RRZ" firstAttribute="centerX" secondItem="WsN-vh-dv1" secondAttribute="centerX" id="yVd-D3-oNZ"/>
-                                    <constraint firstAttribute="trailing" secondItem="34e-wR-GOi" secondAttribute="trailing" constant="8" id="zIQ-PM-DCE"/>
+                                    <constraint firstAttribute="trailing" secondItem="34e-wR-GOi" secondAttribute="trailing" constant="50" id="zIQ-PM-DCE"/>
                                     <constraint firstItem="Wkf-Bz-o0f" firstAttribute="top" secondItem="uuN-0H-WPC" secondAttribute="bottom" constant="8" id="zX3-Cv-KmU"/>
                                 </constraints>
                             </view>
@@ -197,6 +201,10 @@
                     <navigationItem key="navigationItem" title="Add Pizza" id="aD8-1d-aM2">
                         <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="WCn-6O-sAQ"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="costLabel" destination="Wkf-Bz-o0f" id="ZKD-U5-0EH"/>
+                        <outlet property="sizeLabel" destination="UvA-fB-RRZ" id="mKg-Fx-klG"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2938" y="354"/>

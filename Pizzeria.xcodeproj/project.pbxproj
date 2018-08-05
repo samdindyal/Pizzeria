@@ -12,6 +12,7 @@
 		581FD111211243BC0031D8B5 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581FD110211243BC0031D8B5 /* OrderViewController.swift */; };
 		581FD1132113AC800031D8B5 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581FD1122113AC800031D8B5 /* Order.swift */; };
 		581FD1152113ADB10031D8B5 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581FD1142113ADB10031D8B5 /* Pizza.swift */; };
+		588DAFFC21176C07002DF699 /* PizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588DAFFB21176C07002DF699 /* PizzaViewController.swift */; };
 		58E384E7211137EB00BE49CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E384E6211137EB00BE49CD /* AppDelegate.swift */; };
 		58E384EC211137EB00BE49CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E384EA211137EB00BE49CD /* Main.storyboard */; };
 		58E384EE211137EC00BE49CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58E384ED211137EC00BE49CD /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		581FD110211243BC0031D8B5 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		581FD1122113AC800031D8B5 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		581FD1142113ADB10031D8B5 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		588DAFFB21176C07002DF699 /* PizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaViewController.swift; sourceTree = "<group>"; };
 		58E384E3211137EB00BE49CD /* Pizzeria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pizzeria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E384E6211137EB00BE49CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58E384EB211137EB00BE49CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				58E384E6211137EB00BE49CD /* AppDelegate.swift */,
 				58E384EA211137EB00BE49CD /* Main.storyboard */,
 				581FD110211243BC0031D8B5 /* OrderViewController.swift */,
+				588DAFFB21176C07002DF699 /* PizzaViewController.swift */,
 				58E384ED211137EC00BE49CD /* Assets.xcassets */,
 				58E384EF211137EC00BE49CD /* LaunchScreen.storyboard */,
 				58E384F2211137EC00BE49CD /* Info.plist */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				581FD10F21123DA70031D8B5 /* PizzeriaViewController.swift in Sources */,
+				588DAFFC21176C07002DF699 /* PizzaViewController.swift in Sources */,
 				581FD111211243BC0031D8B5 /* OrderViewController.swift in Sources */,
 				581FD1152113ADB10031D8B5 /* Pizza.swift in Sources */,
 				581FD1132113AC800031D8B5 /* Order.swift in Sources */,

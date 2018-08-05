@@ -15,10 +15,9 @@ class Pizza {
         }
     }
     
-    var cost:Float
+    var cost:Float!
     
     init(size:Int = 6) {
         self.size = size
-        self.cost = (powf(Float(size), 2) * 0.05 * 0.75) + 1
     }
 }
